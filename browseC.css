@@ -1,0 +1,236 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f3ed;
+    color: #333;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #6F4E37;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.logo img {
+   width: 100px;
+    transform: rotate(10deg);
+    margin-left: 650px;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #6F4E37;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.open {
+    width: 180px;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sidebar .sidebar-nav a {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar .sidebar-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#signOutBtn {
+    margin-top: auto;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#signOutBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ================= TOP PICKS ================= */
+.top-picks {
+    text-align: center;
+    padding: 50px 20px 80px;
+}
+
+.top-picks h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #6F4E37;
+    letter-spacing: 2px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.product-item {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    background-color: #fff7f0;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-item p {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #6F4E37;
+    background-color: #fff7f0;
+    text-align: center;
+}
+
+/* ================= TEASER IMAGE ================= */
+.product-item.teaser {
+    height: 100px;
+    max-width: 350px;
+    overflow: hidden;
+    opacity: 0.7;
+    transform: translateY(30px);
+    pointer-events: none;
+}
+
+.product-item.teaser img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.product-item.teaser p {
+    display: none;
+}
+
+/* ================= VIEW ALL CAKES BUTTON ================= */
+.all-cakes-section {
+    text-align: center;
+    padding: 50px 20px 80px;
+}
+
+.all-cakes-btn {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.all-cakes-btn:hover {
+    background-color: #5a3d2d;
+    transform: translateY(-2px);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f3ed;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        max-width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+
+    .product-item.teaser {
+        display: none; /* hide teaser on mobile */
+    }
+}
+
+
+
+
+
+
+

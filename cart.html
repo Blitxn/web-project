@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="top-bar">
+    <a href="index.html" class="logo-link">
+        <img src="no bg logo.png" alt="Cakey Logo" class="logo">
+    </a>
+</header>
+
+<!-- PRODUCT DETAILS -->
+<main class="product-container">
+    <div class="product-info">
+
+        <!-- IMAGE -->
+        <div class="product-media">
+            <img id="productImage" class="product-image" alt="Product Image">
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product-details">
+
+            <h3 class="storename" id="storeName"></h3>
+            <h2 id="productName"></h2>
+            <p class="flavor" id="productFlavor"></p>
+
+            <p class="price">$<span id="productPrice"></span></p>
+            <p class="availability">Availability: In stock</p>
+            <p class="pickup">Pickup Only</p>
+
+            <!-- QUANTITY -->
+            <div class="quantity">
+                <button type="button" id="minus">−</button>
+                <span id="qty">1</span>
+                <button type="button" id="plus">+</button>
+            </div>
+
+            <!-- PRICE SUMMARY -->
+            <div class="price-summary">
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <p>Tax (10%): $<span id="tax">0.00</span></p>
+                <hr>
+                <p class="total">Total: $<span id="total">0.00</span></p>
+            </div>
+
+            <!-- CUSTOMIZATION NOTE -->
+            <div class="customization">
+                <label for="customNote">Customization / Note</label>
+                <textarea id="customNote" placeholder="Write your request here (e.g. less sugar, birthday message, no nuts)"></textarea>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+                <!-- ADD TO CART -->
+                <button type="button" class="add-cart" id="addCartBtn">Add To Cart</button>
+                <!-- BACK BUTTON -->
+                <button type="button" class="back-btn" id="backBtn">← Back</button>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<script src="cart.js"></script>
+</body>
+</html>
+
+
+
+
+

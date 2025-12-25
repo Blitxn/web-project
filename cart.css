@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f3ed;
+    color: #333;
+}
+
+/* ================= HEADER ================= */
+.top-bar {
+    background-color: #6F4E37;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar .logo-link img {
+    width: 100px;
+    transform: rotate(10deg);
+    margin-left: 650px; /* adjust if needed */
+}
+
+/* ================= PRODUCT CONTAINER ================= */
+.product-container {
+    max-width: 1200px;
+    margin: 80px auto 60px;
+    padding: 0 20px;
+}
+
+/* CARD THAT HOLDS IMAGE + INFO */
+.product-info {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.14);
+    position: relative;
+}
+
+/* ================= IMAGE SIDE (LEFT) ================= */
+.product-media {
+    flex: 0 0 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* center image vertically */
+}
+
+.product-image {
+    width: 100%;
+    max-width: 500px;   /* fixed maximum width */
+    height: 650px;      /* fixed height for uniform size */
+    object-fit: cover;  /* keeps aspect ratio, crops excess */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.02);
+}
+
+/* ================= INFO SIDE (RIGHT) ================= */
+.product-details {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+/* ================= TEXT STYLES ================= */
+.product-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #302626;
+    margin-bottom: 6px;
+}
+
+.product-details h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    color: #6F4E37;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.availability,
+.pickup {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+/* ================= QUANTITY ================= */
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.quantity button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quantity button:hover {
+    background-color: #6F4E37;
+    color: white;
+}
+
+#qty {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ================= BUTTONS ================= */
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: flex-start; /* back button on left */
+}
+
+.add-cart {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-cart:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.back-btn {
+    display: inline-block;       
+    background-color: #fff;
+    color: #6F4E37;
+    border: 2px solid #6F4E37;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    margin-left: 220px;
+}
+
+.back-btn:hover {
+    background-color: #6F4E37;
+    color: white;
+}
+
+/* ================= PRICE SUMMARY ================= */
+.price-summary {
+    margin: 25px 0 20px;
+    padding: 18px 22px;
+    background-color: #f7f3ed;
+    border-radius: 10px;
+    border: 1px solid #e2d6cc;
+    max-width: 460px;
+}
+
+.price-summary p {
+    font-size: 15px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.price-summary hr {
+    border: none;
+    border-top: 1px dashed #c9b6a6;
+    margin: 10px 0;
+}
+
+.price-summary .total {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6F4E37;
+}
+
+.price-summary span {
+    font-weight: 500;
+}
+
+/* ================= CUSTOMIZATION ================= */
+.customization {
+    margin: 20px 0;
+    max-width: 420px;
+}
+
+.customization label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.customization textarea {
+    width: 110%;
+    min-height: 90px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d6c9bd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: text;
+    resize: vertical;
+}
+
+.customization textarea:focus {
+    outline: none;
+    border-color: #6F4E37;
+    box-shadow: 0 0 0 2px rgba(111, 78, 55, 0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-media {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .product-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;  /* maintain aspect ratio */
+    }
+
+    .product-details {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column; /* stack vertically on mobile */
+    }
+
+    .buttons .add-cart,
+    .buttons .back-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

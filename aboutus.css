@@ -1,0 +1,179 @@
+/* ================= IMPORT FONTS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* clean modern font for body */
+    background-color: #f7f3ed;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background-color: #6F4E37;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif; /* elegant header font */
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+}
+
+.header .tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #f7e9dc;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+    padding: 40px 20px;
+}
+
+/* About & Contact Sections */
+.about-section, .contact-section {
+    background-color: #fff;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0dcd4;
+}
+
+.about-section h2, .contact-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6F4E37;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 1px solid #f0ede7;
+    padding-bottom: 8px;
+}
+
+.about-section p, .contact-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    background-color: #6F4E37;
+    color: #fff;
+    padding: 20px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-top: 2px solid #5a3d2d;
+}
+.back-home {
+    margin-top: 25px;
+}
+
+.back-home a {
+    display: inline-block;
+    background-color: #6F4E37;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.back-home a:hover {
+    background-color: #5a3d2d;
+}
+/* ================= ABOUT US SECTION ================= */
+.about-us {
+    padding: 90px 60px;
+    background-color: #FFF3E6; /* soft warm background to match hero */
+    font-family: 'Poppins', sans-serif;
+    color: #2b1c13;
+    position: relative;
+}
+
+.about-us .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    color: #6F4E37;
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: faint background word like hero */
+.about-us::before {
+    content: "About";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%) scale(1.8, 1.8);
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.08;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.about-us p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #2b1c13;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .header .tagline {
+        font-size: 1rem;
+    }
+
+    .about-section h2, .contact-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-section, .contact-section {
+        padding: 20px 15px;
+    }
+}
+
+
+
+

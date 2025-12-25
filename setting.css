@@ -1,0 +1,79 @@
+/* GENERAL PAGE STYLE */
+body {
+    background: #FFF7F2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #2b1c13;
+}
+
+/* HEADER */
+.settings-header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.settings-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #6F4E37;
+}
+
+/* SETTINGS CARD */
+.settings-container {
+    width: 92%;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 25px;
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(111, 78, 55, 0.2);
+}
+
+/* EACH SETTING ROW */
+.settings-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    font-size: 16px;
+}
+
+.settings-section label {
+    font-weight: 600;
+}
+
+/* SELECT DROPDOWNS */
+.settings-section select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1.5px solid #EAD5C7;
+    background: #FFF7F2;
+    color: #2b1c13;
+    font-size: 15px;
+}
+
+/* TOGGLE CHECKBOX */
+.settings-section input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #6F4E37;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6F4E37;
+    color: #FFF7F2;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}

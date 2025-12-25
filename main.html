@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakey – Perfect Cakes</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- ================= OVERLAY ================= -->
+<div class="overlay" id="overlay"></div>
+
+<!-- ================= AUTH POPUP ================= -->
+<div class="auth-popup" id="authPopup">
+    <div class="auth-tabs">
+        <button class="tab-btn active" data-tab="signup">Sign Up</button>
+        <button class="tab-btn" data-tab="login">Login</button>
+    </div>
+
+    <!-- SIGNUP -->
+    <div class="auth-section" id="signupSection">
+        <input type="text" id="signupUsername" placeholder="Username">
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button id="submitSignup">Create Account</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="auth-section hidden" id="loginSection">
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button id="submitLogin">Log In</button>
+    </div>
+
+    <button id="closeForm" class="cancel-btn">Cancel</button>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+        <img src="no bg logo.png" alt="Logo">
+    </div>
+
+    <nav>
+        <a href="main.html" id="homeLink">HOME</a>
+        <a href="#" id="browseCakeLink">BROWSE CAKE</a>
+        <a href="#" id="orderLink">ORDER</a>
+        <a href="#" id="aboutLink">ABOUT US</a>
+    </nav>
+
+    <div class="profile-box" id="profile-box">
+        <div class="profile-icon">
+            <img src="profile-removebg-preview.png" alt="Profile Icon">
+        </div>
+        <p class="signup-text">Sign Up</p>
+    </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <div class="hero-text">
+        <div class="bg-word">Cake</div>
+        <h1>
+            Discover the<br>
+            perfect cake for your<br>
+            taste.
+        </h1>
+        <p class="subtitle">
+            Choose your cake: soft or crunchy,<br>
+            find the one you’ll love!
+        </p>
+        <button class="cta-btn">FIND YOUR CAKE</button>
+    </div>
+
+    <div class="hero-image">
+        <div class="background-circle"></div>
+        <img src="no bg cake-Photoroom.png" 
+             srcset="no bg cake-Photoroom@2x.png 2x, no bg cake-Photoroom@3x.png 3x"
+             alt="Cake">
+    </div>
+</section>
+
+<!-- External JS -->
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

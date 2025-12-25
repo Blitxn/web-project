@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakey – My Account</title>
+    <link rel="stylesheet" href="acc.css">
+</head>
+<body>
+
+<header class="acc-header">
+    <h1>My Account</h1>
+</header>
+
+<main class="acc-container">
+
+    <!-- PROFILE CARD -->
+    <section class="acc-box">
+        <div class="acc-header-card" id="profileCard">
+            <h2>Profile Information</h2>
+            <button class="toggle-btn" id="toggleProfile">See More</button>
+        </div>
+
+        <div class="acc-content" id="profileContent">
+            <div class="acc-section">
+                <label>Profile Picture</label>
+                <input type="file" id="profilePicture" accept="image/*">
+            </div>
+
+            <div class="acc-section">
+                <label>Username</label>
+                <input type="text" id="accUsername">
+            </div>
+
+            <div class="acc-section">
+                <label>Email</label>
+                <input type="email" id="accEmail">
+            </div>
+
+            <div class="acc-section">
+                <label>Phone Number</label>
+                <input type="text" id="accPhone">
+            </div>
+
+            <button class="save-btn" id="saveProfile">Save Changes</button>
+        </div>
+    </section>
+
+    <!-- PASSWORD CARD -->
+    <section class="acc-box">
+        <div class="acc-header-card" id="passwordCard">
+            <h2>Change Password</h2>
+            <button class="toggle-btn" id="togglePassword">See More</button>
+        </div>
+
+        <div class="acc-content" id="passwordContent">
+            <div class="acc-section">
+                <label>Old Password</label>
+                <input type="password" id="oldPassword">
+            </div>
+
+            <div class="acc-section">
+                <label>New Password</label>
+                <input type="password" id="newPassword">
+            </div>
+
+            <div class="acc-section">
+                <label>Confirm New Password</label>
+                <input type="password" id="confirmPassword">
+            </div>
+
+            <button class="save-btn" id="updatePassword">Update Password</button>
+        </div>
+    </section>
+
+</main>
+
+<!-- FIXED LOG OUT BUTTON AT BOTTOM -->
+<button id="logoutBtn">Log Out</button>
+
+<script src="acc.js"></script>
+</body>
+</html>
+
+
+
+

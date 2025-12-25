@@ -1,0 +1,151 @@
+body {
+    background: #FFF7F2;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2b1c13;
+}
+
+/* HEADER */
+.acc-header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.acc-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #6F4E37;
+}
+
+/* MAIN CONTAINER */
+.acc-container {
+    width: 92%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* ACCOUNT BOX */
+.acc-box {
+    background: #FFF7F2;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(111,78,55,0.2);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* HEADER CARD */
+.acc-header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    cursor: pointer;
+}
+
+.acc-header-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6F4E37;
+    margin: 0;
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+    background: #6F4E37;
+    color: #FFF7F2;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.toggle-btn:hover {
+    opacity: 0.9;
+}
+
+/* CONTENT (COLLAPSED BY DEFAULT) */
+.acc-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 25px;
+}
+
+/* INPUT SECTION */
+.acc-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.acc-section label {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.acc-section input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1.5px solid #EAD5C7;
+    background: #FFF7F2;
+    font-size: 15px;
+    color: #2b1c13;
+}
+
+.acc-section input:focus {
+    border-color: #6F4E37;
+    outline: none;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+    width: 100%;
+    background: #6F4E37;
+    color: #FFF7F2;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+/* EXPANDED CONTENT */
+.acc-content.show {
+    max-height: 1000px; /* large enough to fit content */
+    padding-bottom: 20px;
+}
+/* Fixed Logout button at the bottom of screen */
+#logoutBtn {
+    position: fixed;
+    bottom: 20px;               /* distance from bottom */
+    left: 50%;                  /* center horizontally */
+    transform: translateX(-50%);
+    width: 90%;                 /* button width */
+    max-width: 400px;
+    padding: 15px 0;
+    font-size: 18px;
+    background-color: #FF4C4C;  /* red for logout */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+#logoutBtn:hover {
+    opacity: 0.9;
+}
+
+
+
