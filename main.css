@@ -12,16 +12,15 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #2b1c13;
 }
+/* Overlay behind popup */
 .overlay {
-    display: none; /* ensure hidden */
-    pointer-events: none; /* prevent blocking clicks when hidden */
+    display: none;
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
     background: rgba(0,0,0,0.5);
     z-index: 999;
 }
-
 /* =====================================================
    THEMED AUTH POPUP — Matches CAKEY style
 ===================================================== */
@@ -198,6 +197,8 @@ body {
     border-radius: 6px;
     font-size: 14px;
 }
+
+
 .signup-form button {
     margin-top: 12px;
     padding: 10px 20px;
@@ -235,10 +236,7 @@ body {
     justify-content: space-between;
     padding: 25px 60px;
     background: #FFF7F2;
-    position: relative;
-    z-index: 1001; /* make clickable above overlay */
 }
-
 
 .navbar nav {
     display: flex;
@@ -311,27 +309,19 @@ body {
     position: relative;
 }
 
-/* HERO TEXT */
-.hero-text {
-    position: relative;
-    z-index: 2;     
-    top: -120px;  /* moves the whole block down */
-    left: 60px; /* moves the whole block right */
-}
-.hero-text h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    line-height:1.1;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 20px;
-}
 /* HERO LEFT SIDE */
 .hero-left {
     position: relative;  /* container for background word */
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+/* HERO TEXT */
+.hero-text {
+    position: relative;
+    z-index: 2;     
+    top: -120px;  /* moves the whole block down */
+    left: 60px; /* moves the whole block right */
 }
 
 /* BIG BACKGROUND WORD */
@@ -350,7 +340,14 @@ body {
     z-index: 1;           /* behind heading */
 }
 
-
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    line-height:1.1;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+}
 
 .subtitle {
     font-size: 20px;
@@ -404,6 +401,8 @@ body {
 
     z-index: 0;
 }
+
+
 .hero-image img {
     position: relative;
     z-index: 1; /* above the circle */
@@ -416,93 +415,56 @@ body {
     transition: transform 0.3s ease;
     top: -107px;
 }
-
-
-/* Responsive adjustments */
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
         align-items: center;
-        padding: 60px 30px;
+        padding: 4rem 2rem;
     }
-
-    .hero-text h1 {
-        font-size: 50px;
-        text-align: center;
+   @media (max-width: 768px) {
+    .bg-word {
+        font-size: 50px;  /* smaller on tablets/mobile */
+        transform: scaleX(2.1) scaleY(2.1);
+        top: -76px;       /* adjust vertical position if needed */
     }
+}
 
-    .subtitle {
-        text-align: center;
-        font-size: 18px;
+    .hero-image img {
+        transform: scale(1) rotate(0deg); /* smaller image, no rotation */
+        translate: none;
     }
-
-    .navbar nav {
-        gap: 30px;
-    }
-
     .background-circle {
         width: 500px;
         height: 500px;
-    }
-
-    .hero-image img {
-        transform: scale(1) rotate(0deg);
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -50%);
     }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .hero-text h1 {
-        font-size: 36px;
+        font-size: 2.5rem;
     }
-
     .subtitle {
-        font-size: 16px;
+        font-size: 0.9rem;
     }
-
-    .cta-btn {
-        font-size: 16px;
-        padding: 8px 20px;
+    .navbar nav a {
+        font-size: 1.2rem;
+        margin: 0 10px;
     }
-
     .background-circle {
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 275px;
     }
-
-    .hero-image img {
-        width: 80%;
-        transform: scale(1) rotate(0deg);
-    }
-
-    .navbar nav {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .hero-image img {
+    position: relative; /* needed for top to work */
+    width: 230px;
+    top: 110px; /* moves image 50px down */
+    transform: scale(1.4) rotate(-7deg); /* keep your transform if needed */
 }
 
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 28px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-    }
-
-    .cta-btn {
-        font-size: 14px;
-        padding: 6px 15px;
-    }
-
-    .background-circle {
-        width: 250px;
-        height: 250px;
-    }
-
-    .hero-image img {
-        width: 90%;
-    }
 }
+
 
 
 
